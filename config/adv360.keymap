@@ -35,7 +35,7 @@
     dltl: dollar_tilde {
         compatible = "zmk,behavior-mod-morph";
         label = "DOLLAR_TILDE";
-        #binding-cells = <2>;
+        #binding-cells = <0>;
         bindings = <&kp DOLLAR>, <&kp TILDE>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
@@ -43,7 +43,7 @@
     amppcnt: amp_percent {
         compatible = "zmk,behavior-mod-morph";
         label = "AMP_PERCENT";
-        #binding-cells = <2>;
+        #binding-cells = <0>;
         bindings = <&kp AMPERSAND>, <&kp PERCENT>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
@@ -51,7 +51,7 @@
     pndgr: pound_grave {
         compatible = "zmk,behavior-mod-morph";
         label = "POUND_GRAVE";
-        #binding-cells = <2>;
+        #binding-cells = <0>;
         bindings = <&kp POUND>, <&kp GRAVE>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
