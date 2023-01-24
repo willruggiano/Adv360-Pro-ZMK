@@ -44,6 +44,14 @@
         bindings = <&kp POUND>, <&kp GRAVE>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    amppcnt: ampersand_percent {
+        compatible = "zmk,behavior-mod-morph";
+        label = "AMPERSAND_PERCENT";
+        #binding-cells = <0>;
+        bindings = <&kp AMPERSAND>, <&kp PERCENT>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
     keymap {
