@@ -60,7 +60,7 @@
 
         default_layer {
             bindings = <
- &dllrtld     &kp AMPERSAND   &kp LBKT    &kp LBRC   &kp LPAR   &kp EQUAL                &none          &none   &kp ASTERISK   &kp RPAR    &kp RBRC        &kp RBKT       &kp EXCL  &pndgr
+ &dllrtld     &amppcnt   &kp LBKT    &kp LBRC   &kp LPAR   &kp EQUAL                &none          &none   &kp ASTERISK   &kp RPAR    &kp RBRC        &kp RBKT       &kp EXCL  &pndgr
     &kp TAB          &kp SEMI  &kp COMMA  &kp PERIOD      &kp P       &kp Y                &none          &none          &kp F      &kp G       &kp C           &kp R          &kp L   &kp FSLH
     &kp ESC             &kp A      &kp O       &kp E      &kp U       &kp I                &mo 1  &kp BACKSPACE  &kp LEFT_META                         &kp RIGHT_META  &kp BACKSPACE     &tog 1   &kp D   &kp H   &kp T   &kp N   &kp S      &kp MINUS
      &kp AT  &kp SINGLE_QUOTE      &kp Q       &kp J      &kp K       &kp X                &none          &none       &kp LALT      &none       &none        &kp RALT          &none      &none   &kp B   &kp M   &kp W   &kp V   &kp Z  &kp BACKSLASH
