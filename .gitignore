@@ -1,1 +1,9 @@
+# devenv
+/.devenv/
+/.direnv/
+
+# firmware
 /firmware/*.uf2
+
+# pre-commit
+.pre-commit-config.yaml
