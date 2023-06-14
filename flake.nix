@@ -19,7 +19,7 @@
       perSystem = {pkgs, ...}: {
         devenv.shells.default = {
           name = "adv360-pro";
-          packages = with pkgs; [coreutils gh gnutar];
+          packages = with pkgs; [coreutils gh gnumake gnutar];
           pre-commit.hooks = {
             alejandra.enable = true;
           };
