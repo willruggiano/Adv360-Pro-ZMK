@@ -83,7 +83,7 @@
             bindings = <
 &kp TILDE   &kp N1     &kp N2            &kp N3          &kp N4           &kp N5                &tog 1                                                                          &mo 3      &kp N6     &kp N7     &kp N8                 &kp N9     &kp N0             &kp POUND
 &kp TAB     &kp SEMI   &kp COMMA         &kp PERIOD      &kp LESS_THAN    &kp GREATER_THAN      &none                                                                           &none      &none      &none      &none                  &none      &kp SLASH          &kp AT_SIGN
-&kp DOLLAR  &kp AMPS   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &none      &kp BACKSPACE  &kp LMETA              &kp RMETA          &kp DELETE  &none      &kp EQUAL  &kp ASTRK  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp RIGHT_BRACKET  &kp EXCL
+&kp DOLLAR  &kp AMPS   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &tog 4     &kp BACKSPACE  &kp LMETA              &kp RMETA          &kp DELETE  &tog 4     &kp EQUAL  &kp ASTRK  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp RIGHT_BRACKET  &kp EXCL
 &none       &kp GRAVE  &kp APOS          &none           &none            &none                                           &kp LEFT_ALT           &kp RIGHT_ALT                             &none      &none      &none                  &kp MINUS  &kp BACKSLASH      &none
 &mo 2       &none      &none             &kp LEFT        &kp RIGHT                              &kp LSHFT  &kp SPACE      &hold_tap LCTRL 4      &hold_tap RCTRL 4  &kp RET     &kp RSHFT             &kp UP     &kp DOWN               &none      &none              &mo 2
             >;
