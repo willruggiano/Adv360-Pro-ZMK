@@ -19,42 +19,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        at_caret: at_caret {
-            compatible = "zmk,behavior-mod-morph";
-            label = "AT_CARET";
-            bindings = <&kp AT_SIGN>, <&kp CARET>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        hash_grave: hash_grave {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HASH_GRAVE";
-            bindings = <&kp HASH>, <&kp GRAVE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        dollar_tilde: dollar_tilde {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOLLAR_TILDE";
-            bindings = <&kp DOLLAR>, <&kp TILDE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        amp_per: amp_per {
-            compatible = "zmk,behavior-mod-morph";
-            label = "AMP_PER";
-            bindings = <&kp AMPS>, <&kp PERCENT>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
     };
 
     keymap {
