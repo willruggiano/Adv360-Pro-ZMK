@@ -107,11 +107,11 @@
         symbol {
             display-name = "Sym";
             bindings = <
-&dollar_tilde  &amp_per  &trans            &trans          &trans                &trans     &tog 1                                                              &mo 3      &trans     &trans                 &trans           &trans             &kp EXCL   &hash_grave
-&trans         &kp SEMI  &kp COMMA         &kp PERIOD      &trans                &trans     &none                                                               &none      &trans     &none                  &none            &trans             &kp SLASH  &at_caret
-&kp ESCAPE     &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &tog 4     &kp BACKSPACE  &kp LMETA         &kp RMETA      &trans   &tog 4     &kp ASTRK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp MINUS  &kp BACKSLASH
-&none          &kp APOS  &trans            &none           &none                 &none                                &kp LEFT_ALT      &kp RIGHT_ALT                      &none      &none                  &none            &kp MINUS          &trans     &none
-&mo 2          &none     &none             &kp LEFT        &kp RIGHT                        &kp LSHFT  &kp SPACE      &kp LCTRL         &kp RCTRL      &kp RET  &kp RSHFT             &kp UP                 &kp DOWN         &none              &none      &mo 2
+&kp TILDE          &kp DOLLAR    &kp PERCENT  &kp CARET   &trans                &kp AT         &tog 1                                                              &mo 3      &kp AT            &trans    &kp CARET   &kp PERCENT  &kp DOLLAR    &kp GRAVE
+&kp TAB            &trans        &kp PLUS     &kp ASTRK   &kp LBKT              &kp AMPS       &none                                                               &none      &kp AMPS          &kp RBKT  &kp ASTRK   &kp PLUS     &trans        &kp TAB
+&kp DOUBLE_QUOTES  &kp COLON     &kp MINUS    &kp COMMA   &kp LEFT_PARENTHESIS  &kp LESS_THAN  &tog 4     &kp BACKSPACE  &kp LMETA         &kp RMETA      &trans   &tog 4     &kp GREATER_THAN  &kp RPAR  &kp COMMA   &kp MINUS    &kp SEMI      &kp APOS
+&kp EXCL           &kp QUESTION  &kp EQUAL    &kp PERIOD  &kp LBRC              &kp BACKSLASH                            &kp LEFT_ALT      &kp RIGHT_ALT                      &kp SLASH         &kp RBRC  &kp PERIOD  &kp EQUAL    &kp QUESTION  &kp EXCL
+&mo 2              &none         &kp HASH     &kp LEFT    &kp RIGHT                            &kp LSHFT  &kp SPACE      &kp LCTRL         &kp RCTRL      &kp RET  &kp RSHFT                    &kp UP    &kp DOWN    &kp HASH     &none         &mo 2
             >;
         };
     };
