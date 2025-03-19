@@ -20,14 +20,40 @@
             bindings = <&kp>, <&kp>;
         };
 
-        hold_tap: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT";
-            bindings = <&kp>, <&tog>;
+        at_caret: at_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_CARET";
+            bindings = <&kp AT_SIGN>, <&kp CARET>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hash_grave: hash_grave {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HASH_GRAVE";
+            bindings = <&kp HASH>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dollar_tilde: dollar_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOLLAR_TILDE";
+            bindings = <&kp DOLLAR>, <&kp TILDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        amp_per: amp_per {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMP_PER";
+            bindings = <&kp AMPS>, <&kp PERCENT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -81,11 +107,11 @@
         symbol {
             display-name = "Sym";
             bindings = <
-&kp TILDE   &kp N1     &kp N2            &kp N3          &kp N4           &kp N5                &tog 1                                                              &mo 3      &kp N6     &kp N7     &kp N8                 &kp N9     &kp N0             &kp POUND
-&kp TAB     &kp SEMI   &kp COMMA         &kp PERIOD      &kp LESS_THAN    &kp GREATER_THAN      &none                                                               &none      &kp CARET  &none      &none                  &trans     &kp SLASH          &kp AT_SIGN
-&kp DOLLAR  &kp AMPS   &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &tog 4     &kp BACKSPACE  &kp LMETA         &kp RMETA      &trans   &tog 4     &kp EQUAL  &kp ASTRK  &kp RIGHT_PARENTHESIS  &kp PLUS   &kp RIGHT_BRACKET  &kp EXCL
-&none       &kp GRAVE  &kp APOS          &none           &none            &none                                           &kp LEFT_ALT      &kp RIGHT_ALT                      &none      &none      &none                  &kp MINUS  &kp BACKSLASH      &none
-&mo 2       &none      &none             &kp LEFT        &kp RIGHT                              &kp LSHFT  &kp SPACE      &kp LCTRL         &kp RCTRL      &kp RET  &kp RSHFT             &kp UP     &kp DOWN               &none      &none              &mo 2
+&dollar_tilde  &amp_per  &trans            &trans          &trans                &trans     &tog 1                                                              &mo 3      &trans     &trans                 &trans           &trans             &kp EXCL   &hash_grave
+&trans         &kp SEMI  &kp COMMA         &kp PERIOD      &trans                &trans     &none                                                               &none      &trans     &none                  &none            &trans             &kp SLASH  &at_caret
+&kp ESCAPE     &kp AMPS  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp EQUAL  &tog 4     &kp BACKSPACE  &kp LMETA         &kp RMETA      &trans   &tog 4     &kp ASTRK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp MINUS  &kp BACKSLASH
+&none          &kp APOS  &trans            &none           &none                 &none                                &kp LEFT_ALT      &kp RIGHT_ALT                      &none      &none                  &none            &kp MINUS          &trans     &none
+&mo 2          &none     &none             &kp LEFT        &kp RIGHT                        &kp LSHFT  &kp SPACE      &kp LCTRL         &kp RCTRL      &kp RET  &kp RSHFT             &kp UP                 &kp DOWN         &none              &none      &mo 2
             >;
         };
     };
